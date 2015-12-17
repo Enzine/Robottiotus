@@ -23,3 +23,10 @@ Robottiohjelmointi loki
 - oli ongelmia uuden kansion siirtämisessä gittiin. Ilmeisesti olin päivittänyt väärässä kansiossa (alikansiossa) ja se oli mennyt pääkansion "edelle" eikä /git push/ onnistunut. Se korjaantui komennolla: git pull --rebase origin master    jonka jälkeen uudelleen git push.
 - tein Netbeans ohjeisiin saakka, sillä en ole varma onko siitä nyt tässä hyötyä (sillä eclipse)
 
+18.12.2015
+- Lueskelin kurssisivustoa lisäohjeiden varalta ja pohdiskelin robottiani
+- Päätin tehdä istuvan koiran, jolla on mielialat ja joka reagoi ympäristöönsä.
+- Kosketussensori on varmasti helpoin toteuttaa (koiran nenä).
+- Kaikki muu hieman pelottaa. Mutta enemmän jo tiedän kuin alussa.
+- Tein alustavan projektisuunnitelman ja yritin lähettää sitä gittiin, mutta netti olikin poikki
+- Yritän uudestaan päivittämällä tätä lokia ja puskemalla sen muutokset sitten gittiin - jos edellisetkin päivittyisi samalla! :D

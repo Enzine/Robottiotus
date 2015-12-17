@@ -1,0 +1,18 @@
+Robottiohjelmointi loki
+
+15.12.2015
+- päätin aiheen: robottieläin - koiranpentu
+	* liikkuu ääntä kohti
+	* väistelee seiniä
+	* peruuttaa jos tökkää nenää
+
+16.12.2015
+- tutkittu erilaisia paloja ja netin rakennustutoriaaleja
+- joitakin paloja on vain yksi kappale - tuleekohan siitä ongelma?
+- rakennetta hieman mietitty:
+	* pää, jossa 2 sensoria: kosketussensori = nenä ja etäisyyssensori = silmät
+	* ruumis, jossa tietokone ja masussa äänisensori??
+	* jalat - riittää että esim. etujalat liikkuu moottorilla ja takajalat vain rullaa perässä
+	* häntä - pelkkä koriste
+- mahdollisesti jos ääni mahdollinen niin piippailee korkealta ja vihaisena matalalta
+

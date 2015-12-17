@@ -21,4 +21,5 @@ Robottiohjelmointi loki
 - niissä ollut hieman ongelmia, mutta omatoimisesta selvittämisestä kivoja onnistumisentunteita :)
 - osaan nyt muokata ja lisätä tiedostoja ja hakemistoja gitHubbiin Terminaalin kautta :D!
 - oli ongelmia uuden kansion siirtämisessä gittiin. Ilmeisesti olin päivittänyt väärässä kansiossa (alikansiossa) ja se oli mennyt pääkansion "edelle" eikä /git push/ onnistunut. Se korjaantui komennolla: git pull --rebase origin master    jonka jälkeen uudelleen git push.
+- tein Netbeans ohjeisiin saakka, sillä en ole varma onko siitä nyt tässä hyötyä (sillä eclipse)
 

@@ -1,0 +1,5 @@
+Suunnitelmassa tulee esitellä työnsä aihe, työkalut joita tulee käyttämään, kuinka robotti toteutetaan ja arvio ongelmista joita tulee kohtaamaan.
+
+Esimerkki
+
+Aiheena pallonhakurobo. Pallo tunnistetaan web-kameran kuvasta. Tunnistus tapahtuu tietokoneella OpenCV:n avulla käyttämällä OpenCV:n tarjoamaa ColorBlobDetectoria. Robotti saa liikkumisohjeensa tietokoneelta tunnistuksen perusteella bluetoothin välityksellä, tämä toteutetaan LejOS:n bluetooth luokkien avulla. Ongelmana voi olla pallon tunnistamisen hankaluus eri valaistusolosuhteissa, eli voi olla että joudun rajoittamaan robotin toimivaan dokumentoidusti vain tietyissä valaistusolosuhteissa.

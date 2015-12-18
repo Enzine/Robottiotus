@@ -36,3 +36,8 @@ Robottiohjelmointi loki
 - Sain pajassa lisää legoja
 - Testailin robotin näytölle tulostamista - on kivaa :D
 - Testailin kosketussensoria. Sain sen toimimaan, mutta nappia pitää painaa ennen kuin yhdistää. Epäkäytännöllistä. Tutkittava lisää.
+- Kirjoittelin koodia kosketussensorille ja saan sen pyörimään niin monta kertaa kuin haluan while-loopin avulla. Toisto loppuu, kun painetaan ESCAPE-nappia. Ongelma: nappia pitää painaa samaan aikaan kuin nenää.
+- Yritin koodailla myös äänisensoria, muttei napannut vielä.
+- Kosketussensoria opin koko ajan enemmän trough trial and error.
+
+19.12.2015

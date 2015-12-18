@@ -31,3 +31,5 @@ Robottiohjelmointi loki
 - Tein alustavan projektisuunnitelman ja yritin lähettää sitä gittiin, mutta netti olikin poikki
 - Yritän uudestaan päivittämällä tätä lokia ja puskemalla sen muutokset sitten gittiin - jos edellisetkin päivittyisi samalla! :D
 - JA SE TOIMI! 
+- Rakensin robottia kunnolla ensi kertaa. Ongelma: äänisensori näyttää aivan pyssyltä... ::D
+- Ongelma2: kuinka liittää kosketussensorin nenäksi?? Ja miten moottorit?

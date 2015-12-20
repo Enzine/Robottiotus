@@ -1,0 +1,26 @@
+VERSIOLOKI
+
+Teknoeläin -> robottieläin -> robottikoiranpentu -> Doggy
+
+Doggy 1.0
+- ei päässyt ajatusta pidemmälle
+- ongelmia oli mm. näytön luettavuuden käytännöllisyys vaakatasossa sekä yleinen hankaluus rakennuksen ja liikkuvuuden suhteen
+- löytyy suunnitelmaraakapiirros
+
+Doggy 2.0
+- ensimmäinen toteutettu Doggy, silloin vielä pelkkä "robotti"
+- epäsymmetrinen ja kikkakolmosilla tuettu niska/pää -rakenne
+- robotilla oli pää (etäisyyssensori) niskan jatkeena sekä tassut: ääniselsori sekä kummallinen tassukyhäelmä
+- ongelmia oli melko ruma ulkomuoto ja epäkoiramaisuus sekä nenän kiinnittämisen hankaluus
+- löytyy suunnitelmaraakapiirros sekä kuvia
+
+Doggy 2.1. - 19.12.
+- käyttöön nimi: Doggy
+- uusi niskaranka rakennettiin, kaikki alusta ja tuli tukeva sekä koirannäköinen lopputulos
+- nenä kiinnitettin kaulan varteen ja tukevoittamiseksi kuminauhalla vielä etäisyyssensoriin
+- robotti sai myös korvat
+- löytyy kuvia
+
+Doggy 2.1.2. - 19.12.
+- tassukyhäelmä heitettiin helvettiin (parempi ilman kuin sen kanssa)
+- edelliset korva hylättiin, koska uudenlaiset korvat osoittautuivat näyttävämmiksi

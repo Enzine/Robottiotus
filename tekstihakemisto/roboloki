@@ -40,6 +40,8 @@ Robottiohjelmointi loki
 - Yritin koodailla myös äänisensoria, muttei napannut vielä.
 - Kosketussensoria opin koko ajan enemmän trough trial and error.
 
+EKA PALAUTUS.
+
 19.12.2015
 - yön IDEOINTIA: saisinkohan "koiraääniä" netistä esim. tervehdys ja mielialat
 - testailin äänisensoria ja sain sen toimimaan kyllä, mutta en osaa määrittää mielialoille kestoja - olisikohan parempi kiertää?
@@ -51,3 +53,19 @@ Robottiohjelmointi loki
 - rakensin robotin valmiiksi! Tasapainotus aika kiva ja hyvä rakenne - ja kaunis - ja läski :D Koiralta näyttää (y)
 - nyt sitten vaan testailemaan seuraavalla kerralla vähän moottoreita ja etäisyyssensoria ja siitä sit koodia kirjottamaan! Hyvässä vaiheessa!
 - UPDATE: nyt myös nenänpää!
+
+24.12.2015
+- laitoin johdot paikalleen ja ryhdyin tutkimaan moottoreita
+- sain robotin melko nopeasti liikkumaan - huomasin myös, että moottorit on ns. väärinpäin eli 'forward' -komento liikuttaa taaksepäin ja 'backward' eteenpäin :D Koiran ulkomuodon takia tämä on kuitenkin välttämätöntä (sekä myös tasapainotuksen), joten täytyy vain muistaa koodata nurinkurin
+- muutenkin tasapainotuksessa pahasti haparointia jos kovasta vauhdista lähteekin yhtäkkiä eri suuntaan - toistaiseksi pakitetaan vain maltillisilla vauhdeilla
+- moottoreiden toiminta oli yllättävän helppoa: ei tarvitse luoda moottori-olioita vaan komennot toimivat Motor.A. ..., Motor.B. ... jne.
+- takapyörä irtoilee etenkin epätasaisilla pinnoilla kulkiessaan - RATKAISUA?
+- opettelin myös ultraäänisensorin käyttöä
+- aluksi ei meinannut toimia, mutta olinkin sotkenut johdot ja luulin se olevan kytkettynä eri porttiin - nyt toimii ja hienosti!
+- loppujen lopuksi etäisyyssensorin käyttö on melko helppoa
+- tällä hetkellä robotti liikkuu, kunnes painetaan ENTER+ESCAPE ja jos seinä lähestyy, kääntyy oikealle ja jos painetaan nenää, pakittaa
+
+TOKA PALAUTUS.
+
+27.12.2015
+- kirjoitin ja palautin 2.viikkoraportin

@@ -69,3 +69,8 @@ TOKA PALAUTUS.
 
 27.12.2015
 - kirjoitin ja palautin 2.viikkoraportin
+
+1.1.2015
+- opettelin graafisen esityksen luomista näytölle: tein mielialat iloinen, ok ja vihainen
+- ne ovat kyllä melko tylsät, että varmaan tulee vielä muutoksia
+- yritin saada omat äänitiedostot toimimaan. Kävi ilmi, että tiedostot täytyy ladata nxt-tietokoneelle ja WAV täytyy muuttaa RSO:ksi. Sain muunnettua tiedostot Windowsilla WAV2RSO-ohjelmalla. Loin nxjbrowsen external tooliksi exlipseen ja poistin vanhat tiedostot brickiltä. Äänitiedostojen soittaminen ei vieläkään toimi. Huomenna jatkuu.

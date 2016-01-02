@@ -74,3 +74,11 @@ TOKA PALAUTUS.
 - opettelin graafisen esityksen luomista näytölle: tein mielialat iloinen, ok ja vihainen
 - ne ovat kyllä melko tylsät, että varmaan tulee vielä muutoksia
 - yritin saada omat äänitiedostot toimimaan. Kävi ilmi, että tiedostot täytyy ladata nxt-tietokoneelle ja WAV täytyy muuttaa RSO:ksi. Sain muunnettua tiedostot Windowsilla WAV2RSO-ohjelmalla. Loin nxjbrowsen external tooliksi exlipseen ja poistin vanhat tiedostot brickiltä. Äänitiedostojen soittaminen ei vieläkään toimi. Huomenna jatkuu.
+
+2.1.2015
+- sain äänet toimimaan! Tiedostojen pitää olla WAV-muodossa, mutta ne on ensin muunnettava oikeanlaiseksi WAV:iksi. Se onnistuu terminaalista käsin koodilla: sox muunnettava.wav -t wav -c 1 -1 -r 8000 muunnettu.wav    8000 on melko korkea, joten käytin 7000. Yksi ääni ei kuulunut joten käytin 6000 ja sitten kuului. :)
+- laitoin äänet mielialoille - iloista voisi ehkä korkeuttaa
+- koristelin robotin ulkomuotoa: leikkasin ja teippasin sille kielen punaisesta huovasta (VAU!) ja leikkasin hännän + "tukan" karvaisesta avaimenperästä - kiinnitin hännän kuminauhalla ja tukan kaksipuolisella teipillä.
+- Ongelma ilmeni! Koira kääntyy kummallisesti nyt kun paino on enempi takana. Yritin kaikenlaisia takapyöräratkaisuja, mutta päädyttiin maalarinteipattuun alkuperäiseen pyörään. Nyt luistaa lattialla eikä matto mene ryttyyn!
+- kääntyminen helpottui, kun toinen pyörä on vastedes kääntyessä pysähdyksissä
+- haluaisin vielä, että robotti liikkuu äänen suuntaan eli tulee kutsuttaessa! Siihen tarvitaan kuitenkin toinen äänisensori. Saan sen toivottavasti demoissa.

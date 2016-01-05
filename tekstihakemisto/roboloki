@@ -88,3 +88,8 @@ TOKA PALAUTUS.
 - tulin siihen tulokseen, että moottorien ääni on aika kova, joten siirsin äänisensorin korvan taakse kauemmaksi ettei ottaisi niin paljon häiriötä
 - robotti sai siis paremmat tassut itselleen, kun äänisensori on poissa - niin myös korvia täytyi hieman muokata, ei enää mitään liikuteltavia osia! Se onkin hyvä sillä ne liikkuivat itsekseen vääriin suuntiin joka tapauksessa.
 - siistin koodia: tein metodeja niin, että varsinainen maini on vain pari riviä
+
+5.1.2016
+- oli demo ja sain toisen äänisensorin
+- yritin saada robotin ääntä kohti: robotti vain pyörii ympäri eikä löydä perille
+

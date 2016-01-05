@@ -92,4 +92,5 @@ TOKA PALAUTUS.
 5.1.2016
 - oli demo ja sain toisen äänisensorin
 - yritin saada robotin ääntä kohti: robotti vain pyörii ympäri eikä löydä perille
+- paransin koodirakennetta: nyt toiminnoille ja mielialatoteutuksille omat luokat!
 

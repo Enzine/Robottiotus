@@ -18,9 +18,9 @@ public class Maini {
 
 		Graphics graf = new Graphics();
 		MoottorienLiikuttaja liikuttaja = new MoottorienLiikuttaja();
-		MielialojenPiirtaja piirtaja = new MielialojenPiirtaja(liikuttaja, graf);
+		MielialojenPiirtaja piirtaja = new MielialojenPiirtaja(graf);
 		AanenSoittaja soittaja = new AanenSoittaja();
-		Iloinen ilo = new Iloinen(piirtaja, soittaja);
+		Iloinen ilo = new Iloinen(piirtaja, soittaja, liikuttaja);
 		Vihainen viha = new Vihainen(piirtaja, soittaja, liikuttaja);
 		
 		

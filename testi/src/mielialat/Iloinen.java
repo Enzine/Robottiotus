@@ -1,22 +1,23 @@
 package mielialat;
 import toiminnot.AanenSoittaja;
 import toiminnot.MielialojenPiirtaja;
+import toiminnot.MoottorienLiikuttaja;
 import lejos.util.Delay;
 
 
 public class Iloinen extends Mieliala {
 	
-	public Iloinen(MielialojenPiirtaja piirtaja, AanenSoittaja soittaja) {
-		super(piirtaja, soittaja);
+	public Iloinen(MielialojenPiirtaja piirtaja, AanenSoittaja soittaja, MoottorienLiikuttaja liikuttaja) {
+		super(piirtaja, soittaja, liikuttaja);
 	}
 
 	public void toteutus() {  // ympäri ja haukkuu
 		soittaja.soitaWoof();
 		piirtaja.piirraIloinen(piirtaja.getGraf());
-		piirtaja.getLiikuttaja().pysahdy();
+		liikuttaja.pysahdy();
 		Delay.msDelay(600);
 		
-		piirtaja.getLiikuttaja().ympari();
+		liikuttaja.ympari();
 		soittaja.soitaWoof();
 		Delay.msDelay(400);
 		

@@ -5,11 +5,9 @@ import toiminnot.MoottorienLiikuttaja;
 
 
 public class Vihainen extends Mieliala {
-	private MoottorienLiikuttaja liikuttaja;
 	
 	public Vihainen(MielialojenPiirtaja piirtaja, AanenSoittaja soittaja, MoottorienLiikuttaja liikuttaja) {
-		super(piirtaja, soittaja);
-		this.liikuttaja = liikuttaja;
+		super(piirtaja, soittaja, liikuttaja);
 	}
 
 	public void toteutus() throws InterruptedException {

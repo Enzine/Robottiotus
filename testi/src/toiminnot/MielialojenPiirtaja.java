@@ -3,11 +3,9 @@ import javax.microedition.lcdui.Graphics;
 
 
 public class MielialojenPiirtaja {
-	private MoottorienLiikuttaja liikuttaja;
 	private Graphics graf;
 	
-	public MielialojenPiirtaja(MoottorienLiikuttaja liikuttaja, Graphics graf) {
-		this.liikuttaja = liikuttaja;
+	public MielialojenPiirtaja(Graphics graf) {
 		this.graf = graf;
 	}
 	
@@ -56,10 +54,6 @@ public class MielialojenPiirtaja {
 		graf.fillRect(71, 45, 10, 9);
 		graf.fillRect(78, 50, 10, 9);
 		graf.fillRect(85, 55, 10, 9);	
-	}
-
-	public MoottorienLiikuttaja getLiikuttaja() {
-		return liikuttaja;
 	}
 	
 	public Graphics getGraf() {

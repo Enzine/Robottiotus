@@ -16,7 +16,6 @@ public class Vihainen extends Mieliala {
 		Thread.sleep(800);
 		
 		soittaja.soitaScared();
-		liikuttaja.asetaNopeus(200);
 		liikuttaja.pakita();
 		Thread.sleep(1500);
 		

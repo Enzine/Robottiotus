@@ -13,6 +13,7 @@ public class MoottorienLiikuttaja {
 	}
 	
 	public void pakita() {
+		asetaNopeus(PUOLINOPEUS);
 		Motor.A.forward();
 		Motor.B.forward();
 	}

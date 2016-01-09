@@ -27,6 +27,12 @@ public class AanenSoittaja {
 		soitaLeike(80, scared);
 	}
 	
+	/**
+	 * 1. asettaa äänenvoimakkuuden parametrina annetuksi kokonaisluvuksi ja
+	 * 2. soittaa parametrina annetun tiedoston
+	 * @param volume
+	 * @param leike
+	 */
 	public void soitaLeike(int volume, File leike) {
 		Sound.setVolume(volume);
 		Sound.playSample(leike);

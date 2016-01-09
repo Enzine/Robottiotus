@@ -10,8 +10,12 @@ public class Iloinen extends Mieliala {
 	public Iloinen(MielialojenPiirtaja piirtaja, AanenSoittaja soittaja, MoottorienLiikuttaja liikuttaja) {
 		super(piirtaja, soittaja, liikuttaja);
 	}
-	
-	public void woofTauolla(int ms) {
+	/**
+	 * 1. kutsuu soittajaa soittamaan äänen woof ja 
+	 * 2. toteuttaa parametrina annetun kokonaisluvun pituisen viiveen millisekunteina
+	 * @param ms
+	 */
+	private void woofTauolla(int ms) {
 		soittaja.soitaWoof();
 		Delay.msDelay(ms);
 	}

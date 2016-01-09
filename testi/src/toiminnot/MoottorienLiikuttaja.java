@@ -4,8 +4,8 @@ import lejos.nxt.Motor;
 
 public class MoottorienLiikuttaja {
 	private static final int PERUSNOPEUS = 400;
-	private final int PUOLINOPEUS = 200;
-	private final int TUPLANOPEUS = 800;
+	private static final int PUOLINOPEUS = 200;
+	private static final int TUPLANOPEUS = 800;
 
 	public void pysahdy() {
 		Motor.A.stop();

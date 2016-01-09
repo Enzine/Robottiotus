@@ -14,7 +14,7 @@ public class MielialojenPiirtaja {
 	}
 	
 	public void piirraIloinen() {
-		graf.clear();
+		clear();
 		graf.fillRect(10, 20, 10, 40);
 		graf.fillRect(20, 20, 10, 10);
 		graf.fillRect(30, 20, 10, 40);
@@ -25,13 +25,13 @@ public class MielialojenPiirtaja {
 	}
 	
 	public void piirraOk() {
-		graf.clear();
+		clear();
 		graf.fillArc(10, 10, 25, 50, 90, 360);
 		graf.fillArc(60, 10, 25, 50, 90, 360);
 	}
 	
 	public void piirraVihainen() {
-		graf.clear();
+		clear();
 		graf.fillRect(3, 5, 10, 9);
 		graf.fillRect(10, 10, 10, 9);
 		graf.fillRect(17, 15, 10, 9);

@@ -15,6 +15,18 @@ public class AanenSoittaja {
 		this.scared = new File("pup.wav");
 	}
 	
+	public void soitaWoof() {
+		soitaLeike(100, woof);
+	}
+	
+	public void soitaWhine() {
+		soitaLeike(80, whine);
+	}
+	
+	public void soitaScared() {
+		soitaLeike(80, scared);
+	}
+	
 	public void soitaLeike(int volume, File leike) {
 		Sound.setVolume(volume);
 		Sound.playSample(leike);

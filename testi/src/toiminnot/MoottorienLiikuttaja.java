@@ -3,6 +3,9 @@ import lejos.nxt.Motor;
 
 
 public class MoottorienLiikuttaja {
+	private static final int PERUSNOPEUS = 400;
+	private final int PUOLINOPEUS = 200;
+	private final int TUPLANOPEUS = 800;
 
 	public void pysahdy() {
 		Motor.A.stop();
@@ -15,28 +18,28 @@ public class MoottorienLiikuttaja {
 	}
 	
 	public void eteenpain() {
-		asetaNopeus(400);
+		asetaNopeus(PERUSNOPEUS);
 		Motor.A.backward();
 		Motor.B.backward();
 	}
 	
 	public void kaannyVasemmalle(int ms) throws InterruptedException {
 		Motor.A.stop();
-		asetaNopeus(800);
+		asetaNopeus(TUPLANOPEUS);
 		Motor.B.backward();
 		Thread.sleep(ms);
 	}
 	
 	public void kaannyOikealle(int ms) throws InterruptedException {
 		Motor.B.stop();
-		asetaNopeus(800);
+		asetaNopeus(TUPLANOPEUS);
 		Motor.A.backward();
 		Thread.sleep(ms);
 	}
 	
 	public void ympari() {
 		pysahdy();
-		asetaNopeus(800);
+		asetaNopeus(TUPLANOPEUS);
 		Motor.A.backward();
 	}
 	

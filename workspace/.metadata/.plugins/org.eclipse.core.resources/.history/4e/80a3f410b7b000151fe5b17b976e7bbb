@@ -1,0 +1,15 @@
+package mielialat;
+
+public class Iloinen extends Mieliala {
+	
+	public Iloinen(String nimi) {
+		super(nimi);
+	}
+	
+	
+	
+	
+	
+
+
+}

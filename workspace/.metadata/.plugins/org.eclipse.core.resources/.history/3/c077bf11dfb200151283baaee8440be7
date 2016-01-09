@@ -1,0 +1,177 @@
+import java.io.File;
+import lejos.nxt.Sound;
+import lejos.util.Delay;
+import lejos.nxt.Button;
+import lejos.nxt.LCD;
+import lejos.nxt.Motor;
+import lejos.nxt.SensorPort;
+import lejos.nxt.SoundSensor;
+import lejos.nxt.TouchSensor;
+import lejos.nxt.UltrasonicSensor;
+import javax.microedition.lcdui.Graphics;
+import mielialat.Mieliala;
+
+public class Maini {
+	
+	public static void pysahdy() {
+		Motor.A.stop();
+		Motor.B.stop();
+	}
+	
+	public static void pakita() {
+		Motor.A.forward();
+		Motor.B.forward();
+	}
+	
+	public static void eteenpain() {
+		Motor.A.backward();
+		Motor.B.backward();
+	}
+	
+	public static void kaannyVasemmalle() throws InterruptedException {
+		Motor.A.stop();
+		tuplanopeudella();
+		Motor.B.backward();
+		Thread.sleep(700);
+	}
+	
+	public static void ympari() throws InterruptedException {
+		pysahdy();
+		tuplanopeudella();
+		Motor.B.backward();
+		Thread.sleep(2000);
+	}
+	
+	public static void perusnopeudella() {
+		Motor.A.setSpeed(400);
+		Motor.B.setSpeed(400);
+	}
+	
+	public static void tuplanopeudella() {
+		Motor.A.setSpeed(800);
+		Motor.B.setSpeed(800);
+	}
+	
+	public static void puolinopeudella() {
+		Motor.A.setSpeed(200);
+		Motor.B.setSpeed(200);
+	}
+	
+	public static void iloinenMieliala(File bark, Graphics graf) {
+		Sound.setVolume(100);
+		Sound.playSample(bark);
+		piirraIloinen(graf);
+		pysahdy();
+		Delay.msDelay(600);
+		Sound.playSample(bark);
+		Delay.msDelay(400);
+		Sound.playSample(bark);
+		Delay.msDelay(700);
+		Sound.playSample(bark);
+		Sound.setVolume(80);
+		Delay.msDelay(1500);
+		graf.clear();
+		piirraOk(graf);
+	}
+	
+	public static void vihainenMieliala(File whine, File puppy, Graphics graf) throws InterruptedException {
+		Sound.playSample(whine);
+		piirraVihainen(graf);
+		Thread.sleep(800);
+		Sound.playSample(puppy);
+		puolinopeudella();
+		pakita();
+		Thread.sleep(1500);
+		pysahdy();
+		Thread.sleep(2000); 	//mahdollista nyt sammuttaa painamalla ESCAPE+ENTER!
+	}
+	
+	public static void piirraIloinen(Graphics graf) {
+		graf.clear();
+		graf.fillRect(10, 20, 10, 40);
+		graf.fillRect(20, 20, 10, 10);
+		graf.fillRect(30, 20, 10, 40);
+
+		graf.fillRect(60, 20, 10, 40);
+		graf.fillRect(70, 20, 10, 10);
+		graf.fillRect(80, 20, 10, 40);
+	}
+	
+	public static void piirraOk(Graphics graf) {
+		graf.clear();
+		graf.fillArc(10, 10, 25, 50, 90, 360);
+		graf.fillArc(60, 10, 25, 50, 90, 360);
+	}
+	
+	public static void piirraVihainen(Graphics graf) {
+		graf.clear();
+		graf.fillRect(3, 5, 10, 9);
+		graf.fillRect(10, 10, 10, 9);
+		graf.fillRect(17, 15, 10, 9);
+		graf.fillRect(24, 20, 10, 9);
+		graf.fillRect(31, 25, 10, 9);
+		graf.fillRect(35, 30, 10, 9);
+		graf.fillRect(31, 35, 10, 9);
+		graf.fillRect(24, 40, 10, 9);
+		graf.fillRect(17, 45, 10, 9);
+		graf.fillRect(10, 50, 10, 9);
+		graf.fillRect(3, 55, 10, 9);
+		
+		graf.fillRect(17, 35, 10, 20); // vasen pupilli
+		graf.fillRect(71, 35, 10, 20); // oikea pupilli
+	
+		graf.fillRect(85, 5, 10, 9);
+		graf.fillRect(78, 10, 10, 9);
+		graf.fillRect(71, 15, 10, 9);
+		graf.fillRect(64, 20, 10, 9);
+		graf.fillRect(57, 25, 10, 9);
+		graf.fillRect(53, 30, 10, 9);
+		graf.fillRect(57, 35, 10, 9);
+		graf.fillRect(64, 40, 10, 9);
+		graf.fillRect(71, 45, 10, 9);
+		graf.fillRect(78, 50, 10, 9);
+		graf.fillRect(85, 55, 10, 9);	
+	}
+	
+	public static void main(String[] args) throws Exception{
+		
+		TouchSensor tatsi = new TouchSensor(SensorPort.S1);
+		UltrasonicSensor ultra = new UltrasonicSensor(SensorPort.S2);
+		SoundSensor aani = new SoundSensor(SensorPort.S3, true);
+		SoundSensor aani2 = new SoundSensor(SensorPort.S4, true);
+		
+		File bark = new File("brk.wav");
+		File puppy = new File("pup.wav");
+		File whine = new File("whi.wav");
+		
+		Graphics graf = new Graphics();
+		graf.clear();
+		graf.setStrokeStyle(0);
+		graf.setColor(0);
+		
+		Sound.setVolume(80);
+		ultra.continuous();
+		
+		while (!tatsi.isPressed()) {
+			ympari();
+			pysahdy();
+			Thread.sleep(2000);
+		}
+		
+//		while (true) {
+//			piirraOk(graf);					
+//			while (!tatsi.isPressed()) {
+//				perusnopeudella();
+//				eteenpain();
+//				if (ultra.getDistance() < 50) {
+//					kaannyVasemmalle();
+//				}
+//				if (aani.readValue() > 50) {
+//					iloinenMieliala(bark, graf);
+//				}
+//			}
+//			vihainenMieliala(whine, puppy, graf);
+//		}
+		
+	}
+}

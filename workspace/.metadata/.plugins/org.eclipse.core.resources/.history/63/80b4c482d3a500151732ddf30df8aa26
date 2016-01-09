@@ -1,0 +1,58 @@
+import lejos.nxt.Button;
+import lejos.nxt.LCD;
+import lejos.nxt.SensorPort;
+import lejos.nxt.SoundSensor;
+import lejos.nxt.TouchSensor;
+import mielialat.Mieliala;
+
+public class Maini {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws Exception{
+		
+		Mieliala iloinen = new Mieliala("iloinen", 5);
+		Mieliala pelokas = new Mieliala("pelokas", 5);
+		Mieliala vihainen = new Mieliala("vihainen", 5);
+		
+		TouchSensor tatsi = new TouchSensor(SensorPort.S1);
+		SoundSensor aani = new SoundSensor(SensorPort.S4);
+		
+		int j = 0;
+		while (j < 2) {
+			while (!tatsi.isPressed()) {
+				LCD.clear();
+				LCD.drawString("Olen ILOINEN! =)", 2, 4);
+				for (int i = 0; i < 100; i++) {
+					LCD.setPixel(1, i, 60 - (aani.readValue() / 2));
+					Thread.sleep(10);
+				}
+			}
+			LCD.clear();
+			LCD.drawString("LOPETA! >:(", 2, 4);
+			for (int i = 0; i < 100; i++) {
+				LCD.setPixel(1, i, 60 - (aani.readValue() / 2));
+				Thread.sleep(10);
+			}
+			j++;
+		}
+		
+//		int apu = 0;
+//		while (apu == 0) {
+//			if (tatsi.isPressed()) {
+//				vihainen.turnOn();
+//			} else if (aani)) {
+//				
+//			}
+//		}
+//		
+//		
+//		
+//		Button.waitForAnyPress();
+		
+	
+
+	}
+
+}

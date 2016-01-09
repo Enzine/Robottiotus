@@ -1,0 +1,25 @@
+package mielialat;
+
+public class Mieliala {
+
+	private String nimi;
+	private String viesti;
+	
+	public Mieliala(String nimi) {
+		this.nimi = nimi;
+		this.viesti = "Olen " + nimi.toUpperCase();
+	}
+	
+	public Mieliala() {
+		this.viesti = "Kaikki OK";
+	}
+	
+	public String getViesti() {
+		return viesti;
+	}
+	
+	public String getNimi() {
+		return nimi;
+	}
+	
+}

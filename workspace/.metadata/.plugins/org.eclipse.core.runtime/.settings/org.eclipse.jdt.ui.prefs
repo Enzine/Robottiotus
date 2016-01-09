@@ -1,0 +1,20 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="mielialat.Mieliala"><rhs name\="mielialat.Mieliala"/></lhs><lhs name\="lejos.nxt.SensorConstants"><rhs name\="lejos.nxt.TouchSensor"/><rhs name\="lejos.nxt.SensorPort"/></lhs><lhs name\="lejos.robotics.Touch"><rhs name\="lejos.nxt.TouchSensor"/></lhs><lhs name\="lejos.nxt.TouchSensor"><rhs name\="lejos.nxt.TouchSensor"/></lhs><lhs name\="lejos.nxt.BasicSensorPort"><rhs name\="lejos.nxt.SensorPort"/></lhs><lhs name\="lejos.nxt.ADSensorPort"><rhs name\="lejos.nxt.SensorPort"/></lhs><lhs name\="lejos.nxt.Motor"><rhs name\="lejos.nxt.Motor"/></lhs><lhs name\="javax.microedition.lcdui.Graphics"><rhs name\="javax.microedition.lcdui.Graphics"/></lhs><lhs name\="java.io.File"><rhs name\="java.io.File"/></lhs><lhs name\="MoottorienLiikuttaja"><rhs name\="MoottorienLiikuttaja"/></lhs><lhs name\="MielialojenPiirtaja"><rhs name\="MielialojenPiirtaja"/></lhs><lhs name\="Mieliala"><rhs name\="Iloinen"/></lhs><lhs name\="Iloinen"><rhs name\="Iloinen"/></lhs><lhs name\="AanenSoittaja"><rhs name\="AanenSoittaja"/></lhs></history>
+content_assist_number_of_computers=13
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=60,60,60
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Monospace|10.0|0|GTK|1|;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

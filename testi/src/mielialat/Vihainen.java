@@ -3,6 +3,10 @@ import toiminnot.AanenSoittaja;
 import toiminnot.MielialojenPiirtaja;
 import toiminnot.MoottorienLiikuttaja;
 
+/*
+ * Robotin mieliala kosketussensorin painamisen jälkeen.
+ * 
+ */
 
 public class Vihainen extends Mieliala {
 	

@@ -1,6 +1,10 @@
 package toiminnot;
 import javax.microedition.lcdui.Graphics;
 
+/*
+ * Luokkaa käytetään mielialojen graafiseen esittämiseen.
+ * 
+ */
 
 public class MielialojenPiirtaja {
 	private Graphics graf;

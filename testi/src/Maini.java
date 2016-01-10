@@ -13,8 +13,8 @@ public class Maini {
 		
 		TouchSensor tatsi = new TouchSensor(SensorPort.S1);
 		UltrasonicSensor ultra = new UltrasonicSensor(SensorPort.S2);
-		SoundSensor aani = new SoundSensor(SensorPort.S3, true); //vasen
-		SoundSensor aani2 = new SoundSensor(SensorPort.S4, true); //oikea		
+		SoundSensor aaniV = new SoundSensor(SensorPort.S3, true); //vasen
+		SoundSensor aaniO = new SoundSensor(SensorPort.S4, true); //oikea		
 
 		Graphics graf = new Graphics();
 		MoottorienLiikuttaja liikuttaja = new MoottorienLiikuttaja();
@@ -26,42 +26,70 @@ public class Maini {
 		
 		Sound.setVolume(80);
 		ultra.continuous();
-		
-		while (true) {
-			
-			piirtaja.piirraOk();
-			
-			while (!tatsi.isPressed()) {
-				liikuttaja.eteenpain();
-				if (ultra.getDistance() < 50) {
-					liikuttaja.kaannyVasemmalle(700);
+		while (!tatsi.isPressed()) {
+			if (aaniV.readValue() > 50) {
+				liikuttaja.pysahdy();
+				while (true) {
+					int aaniVasen = aaniV.readValue();
+					int aaniOikea = aaniO.readValue();
+					if (aaniV.readValue() > 30 && aaniO.readValue() > 30) {
+						if (aaniV.readValue() - aaniO.readValue() > -5 && aaniV.readValue() - aaniO.readValue() < 5) {
+							break;
+						}
+						if (aaniVasen < aaniOikea) {
+							liikuttaja.kaannyOikealle(200);
+						} else {
+							liikuttaja.kaannyVasemmalle(200);
+						}
+						
+					} else {
+						break;
+					}
+					
+					Thread.sleep(800);
 				}
-				if (aani.readValue() > 50) {
+				ilo.toteutus();
+			}
+		}
+		
+//		while (true) {
+//			
+//			piirtaja.piirraOk();
+//			
+//			while (!tatsi.isPressed()) {
+//				liikuttaja.eteenpain();
+//				if (ultra.getDistance() < 50) {
+//					liikuttaja.kaannyVasemmalle(700);
+//				}
+//				if (aaniV.readValue() > 50) {
+//					liikuttaja.pysahdy();
 //					while (true) {
-//						int aaniYks = aani.readValue();
-//						int aaniKaks = aani2.readValue();
-//						if (aani.readValue() > 40 && aani2.readValue() > 40) {
-//							if (aani.readValue() - aani2.readValue() > -10 && aani.readValue() - aani2.readValue() < 10) {
+//						int aaniVasen = aaniV.readValue();
+//						int aaniOikea = aaniO.readValue();
+//						if (aaniV.readValue() > 40 && aaniO.readValue() > 40) {
+//							if (aaniV.readValue() - aaniO.readValue() > -5 && aaniV.readValue() - aaniO.readValue() < 5) {
 //								break;
 //							}
-//							if (aaniYks < aaniKaks) {
-//								kaannyVasemmalle(100);
+//							if (aaniVasen < aaniOikea) {
+//								liikuttaja.kaannyOikealle(100);
 //							} else {
-//								kaannyOikealle(100);
+//								liikuttaja.kaannyVasemmalle(100);
 //							}
+//						} else {
+//							break;
 //						}
-//						Thread.sleep(100);
 //						
+//						Thread.sleep(1000);
 //					}
 //					
 //					while (ultra.getDistance() > 50) {
 //						liikuttaja.eteenpain();
 //					}
-					ilo.toteutus();
-				}
-			}
-			viha.toteutus();
-			
-		}
+//					ilo.toteutus();
+//				}
+//			}
+//			viha.toteutus();
+//			
+//		}
 	}
 }

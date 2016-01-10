@@ -3,6 +3,10 @@ import java.io.File;
 
 import lejos.nxt.Sound;
 
+/*
+ * Luokkaa käytetään äänileikkeiden soittamiseen.
+ * 
+ */
 
 public class AanenSoittaja {
 	private File woof;
@@ -28,8 +32,8 @@ public class AanenSoittaja {
 	}
 	
 	/**
-	 * 1. asettaa äänenvoimakkuuden parametrina annetuksi kokonaisluvuksi ja
-	 * 2. soittaa parametrina annetun tiedoston
+	 * Soittaa äänileikkeen halutulla äänenvoimakkuudella.
+	 * 
 	 * @param volume
 	 * @param leike
 	 */

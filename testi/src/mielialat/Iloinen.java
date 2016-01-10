@@ -4,6 +4,10 @@ import toiminnot.MielialojenPiirtaja;
 import toiminnot.MoottorienLiikuttaja;
 import lejos.util.Delay;
 
+/*
+ * Robotin mieliala.
+ * 
+ */
 
 public class Iloinen extends Mieliala {
 	
@@ -11,9 +15,9 @@ public class Iloinen extends Mieliala {
 		super(piirtaja, soittaja, liikuttaja);
 	}
 	/**
-	 * 1. kutsuu soittajaa soittamaan äänen woof ja 
-	 * 2. toteuttaa parametrina annetun kokonaisluvun pituisen viiveen millisekunteina
-	 * @param ms
+	 * Soittaa woof-äänen, jonka jälkeen halutun pituinen viive.
+	 * 
+	 * @param ms	viiveen kesto millisekunteina
 	 */
 	private void woofTauolla(int ms) {
 		soittaja.soitaWoof();

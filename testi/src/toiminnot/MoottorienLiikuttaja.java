@@ -1,6 +1,10 @@
 package toiminnot;
 import lejos.nxt.Motor;
 
+/*
+ * Hallitsee moottorien toimintaa.
+ * 
+ */
 
 public class MoottorienLiikuttaja {
 	private static final int PERUSNOPEUS = 400;
@@ -25,11 +29,9 @@ public class MoottorienLiikuttaja {
 	}
 	
 	/**
-	 * 1. pysäyttää moottorin portissa A,
-	 * 2. asettaa moottorien nopeudeksi 800 millisekuntia,
-	 * 3. määrittää moottorin liikesuunnan taaksepäin portissa B ja
-	 * 4. pysäyttää ohjelman kulun parametrina määritetyn kokonaisluvun verran (millisekuntia)
-	 * @param ms
+	 * Kääntää robottia vasemmalle tuplanopeudella.
+	 * 
+	 * @param ms	käännöksen kesto millisekunteina
 	 * @throws InterruptedException
 	 */
 	public void kaannyVasemmalle(int ms) throws InterruptedException {
@@ -37,13 +39,13 @@ public class MoottorienLiikuttaja {
 		asetaNopeus(TUPLANOPEUS);
 		Motor.B.backward();
 		Thread.sleep(ms);
+		pysahdy();
 	}
+	
 	/**
-	 * 1. pysäyttää moottorin portissa B,
-	 * 2. asettaa moottorien nopeudeksi 800 millisekuntia,
-	 * 3. määrittää moottorin liikesuunnan taaksepäin portissa A ja
-	 * 4. pysäyttää ohjelman kulun parametrina määritetyn kokonaisluvun verran (millisekuntia)
-	 * @param ms
+	 * Kääntää robottia oikealle tuplanopeudella.
+	 * 
+	 * @param ms	käännöksen kesto millisekunteina
 	 * @throws InterruptedException
 	 */
 	public void kaannyOikealle(int ms) throws InterruptedException {
@@ -51,6 +53,7 @@ public class MoottorienLiikuttaja {
 		asetaNopeus(TUPLANOPEUS);
 		Motor.A.backward();
 		Thread.sleep(ms);
+		pysahdy();
 	}
 	
 	public void ympari() {
@@ -60,7 +63,8 @@ public class MoottorienLiikuttaja {
 	}
 	
 	/**
-	 * 1. asettaa moottorin nopeuden parametrina annetuksi kokonaisluvuksi porteissa A ja B (millisekuntia)
+	 * Asettaa moottoreille nopeuden.
+	 * 
 	 * @param nopeus
 	 */
 	public void asetaNopeus(int nopeus) {

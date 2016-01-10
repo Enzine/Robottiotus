@@ -3,6 +3,10 @@ import toiminnot.AanenSoittaja;
 import toiminnot.MielialojenPiirtaja;
 import toiminnot.MoottorienLiikuttaja;
 
+/*
+ * Pohjana mielialoille. Tämän luokan ansiosta uusien mielialojen luominen on helppoa.
+ * 
+ */
 
 public abstract class Mieliala {
 	protected MielialojenPiirtaja piirtaja;

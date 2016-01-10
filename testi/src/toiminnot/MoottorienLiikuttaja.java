@@ -39,7 +39,6 @@ public class MoottorienLiikuttaja {
 		asetaNopeus(TUPLANOPEUS);
 		Motor.B.backward();
 		Thread.sleep(ms);
-		pysahdy();
 	}
 	
 	/**
@@ -53,7 +52,6 @@ public class MoottorienLiikuttaja {
 		asetaNopeus(TUPLANOPEUS);
 		Motor.A.backward();
 		Thread.sleep(ms);
-		pysahdy();
 	}
 	
 	public void ympari() {
